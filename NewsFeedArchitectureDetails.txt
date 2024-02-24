@@ -1,0 +1,14 @@
+userService API
+
+->getPosts:which it will be getting from message queues every time a new feed is published from his network(i.e friends,groups) all post will come at first and then will be filtered according to the network
+->publishPost:this will publish post(feeds) to the storage and message queue will listen all the posts that are published
+->publishPostOnGroup:this will publish the post on the group which the user intended to post in which he/she has previously joined
+->followfriend:this add other users as his followers
+->updateUserInfo:will update his/her basic information
+->joinGroup:will join the group of his/her interest
+
+About the Architecture:
+->Using a microservice architecture as it can be easily scalable i.e using horizontal scaling add multiple instance of service it self.
+->It can be always available even if one instance of the service is down another instance handle the request
+
+ 
